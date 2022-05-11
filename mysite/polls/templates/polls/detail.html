@@ -1,0 +1,16 @@
+<html>
+<body style="background-color: black">
+    <form action="{% url 'polls:vote' question.id %}" method="post" style="background-color: rgb(3, 37, 46)">
+        {% csrf_token %}
+        <fieldset style="color: blue;">
+            <legend style="color: red;"><h1>{{ question.question_text }}</h1></legend>
+            {% for choice in question.choice_set.all %}
+            <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}" style="color: green;">
+            <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}
+            </label><br>
+            {% endfor %}
+        </fieldset>
+        <input type="submit" value="Vote" style="color: green;">
+    </form>
+</body>
+</html>

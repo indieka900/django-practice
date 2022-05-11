@@ -1,0 +1,62 @@
+* {
+    background-color: grey;
+    margin-left: 20px;
+}
+
+li a {
+    color: rgb(128, 0, 107);
+    display: block;
+    border: 1px black solid;
+    border-radius: 3px;
+    text-decoration: none;
+    list-style: lower-alpha;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-right: 0px;
+    font: normal 20px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: rgba(255, 255, 255, 0);
+}
+
+a:hover {
+    color: darkgreen;
+}
+
+a:active {
+    color: greenyellow;
+}
+
+.container {
+    margin: 20px 0;
+    width: 70%;
+}
+
+h1 {
+    text-align: center;
+    color: chartreuse;
+    font: normal 25px Arial, Helvetica, sans-serif;
+    line-height: 1.6em;
+    border: 3px orchid solid;
+    border-radius: 5px;
+    background-color: blueviolet;
+    font-weight: 800;
+    text-decoration: underline;
+    width: 50%;
+    padding: 10px;
+    font-style: italic;
+}
+
+.back a {
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.change a {
+    text-decoration: none;
+    display: inline;
+    border: 0;
+    list-style: none;
+}
